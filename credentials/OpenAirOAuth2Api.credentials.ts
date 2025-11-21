@@ -39,6 +39,12 @@ export class OpenAirOAuth2Api implements ICredentialType {
             default: 'response_type=code',
         },
         {
+            displayName: 'Authentication',
+            name: 'authentication',
+            type: 'hidden',
+            default: 'qs',
+        },
+        {
             displayName: 'namespace',
             name: 'namespace',
             type: 'string',
@@ -53,18 +59,6 @@ export class OpenAirOAuth2Api implements ICredentialType {
             required: true,
             typeOptions: { password: true },
             default: '',
-        },
-        {
-            displayName: 'Authentication',
-            name: 'authentication',
-            type: 'hidden',
-            default: 'qs',
-        },
-        {
-            displayName: 'State',
-            name: 'state',
-            type: 'hidden',
-            default: 'n8n-state-' + (new Date().toJSON()),
         },
     ];
 }

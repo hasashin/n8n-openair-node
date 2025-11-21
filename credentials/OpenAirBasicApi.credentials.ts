@@ -34,7 +34,7 @@ export class OpenAirBasicApi implements ICredentialType {
             default: '',
         },
         {
-            displayName: 'password',
+            displayName: 'Password',
             name: 'password',
             type: 'string',
             required: true,
@@ -42,7 +42,7 @@ export class OpenAirBasicApi implements ICredentialType {
             default: '',
         },
         {
-            displayName: 'namespace',
+            displayName: 'Namespace',
             name: 'namespace',
             type: 'string',
             required: true,
